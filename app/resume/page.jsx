@@ -1,11 +1,12 @@
 "use client"
-import { FaHtml5, FaCss3, FaJs, FaJava, FaKotlin, FaFlutter, FaSwift } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+
+import { FaHtml5, FaCss3, FaJs, FaAndroid, FaJava, FaSwift, FaGit, } from "react-icons/fa";
+import { SiFirebase, SiFlutter, SiKotlin, SiNextdotjs, SiSupabase, SiTailwindcss, } from "react-icons/si";
 
 
 const about = {
     title: "About me",
-    description: "Lorem ipsim dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt exlicabo inventore.",
+    description: "A passionate Full Stack Developer with 5+ years of experience in building high-performance applications. I specialize in creating seamless, scalable, and efficient software solutions while staying up-to-date with the latest technologies.",
     info:[
         {
             fieldName:"Name",
@@ -33,22 +34,22 @@ const about = {
 const experience = {
     icon:'/assets/resume/badge.svg',
     title:'My experience',
-    description:"Lorem ipsim dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt exlicabo inventore.",
+    description:"I have worked in dynamic environments, developing web and mobile applications with modern frameworks. Currently, I am a Full Stack Developer at Tech Solutions Inc., focusing on building robust and user-friendly applications.",
     items:[
         {
-            company:"Tech Solutions Inc.",
-            position:"Full Stack Developer",
-            duration:"2022 - Present"
+            company:"EEDC | Enugu Electricity Distribution Company",
+            position:"Senior Mobile Engineer",
+            duration:"2020 - 2024"
         },
         {
-            company:"Tech Solutions Inc.",
-            position:"Full Stack Developer",
-            duration:"2022 - Present"
+            company:"Cred Assess",
+            position:"Mobile App Developer",
+            duration:"2019 - 2020"
         },
         {
-            company:"Tech Solutions Inc.",
-            position:"Full Stack Developer",
-            duration:"2022 - Present"
+            company:"Vtech Academy",
+            position:"Freelance/Mentorship",
+            duration:"2019"
         },
     ]
 }
@@ -56,7 +57,7 @@ const experience = {
 const education = {
     icon:'/assets/resume/cap.svg',
     title:'My education',
-    description:"Lorem ipsim dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt exlicabo inventore.",
+    description:"With a strong foundation in Computer Science and Applied Mathematics, I have gained expertise in software development from institutions like Wolverhampton University and Federal University of Technology Owerri.",
     items:[
         {
             institution :"WolverHampton University",
@@ -78,23 +79,74 @@ const education = {
 
 const skills = {
     title:'My skills',
-    description:"Lorem ipsim dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt exlicabo inventore.",
+    description:"Proficient in Flutter, React, Node.js, Supabase, and SQL, I have a strong command over frontend, backend, and mobile development. Always eager to learn and adapt to emerging technologies.",
     skillList:[
         {
             icon :<FaHtml5 />,
-            name:"Computer Science",
+            name:"Html",
+            duration:"2022 - 2025"
+        }, 
+        {
+            icon :<FaCss3 />,
+            name:"Css",
             duration:"2022 - 2025"
         },
         {
-            icon :<FaHtml5 />,
-            name:"Computer Science",
+            icon: <FaJs />,
+            name:"JavaScript",
             duration:"2022 - 2025"
+        },
+       {
+        icon:<SiFlutter />,
+            name: "Flutter",
+            duration: "2019 - Present"
         },
         {
-            icon :<FaHtml5 />,
-            name:"Computer Science",
-            duration:"2022 - 2025"
+            icon: <SiTailwindcss />,
+             name: "Tailwind",
+             duration: "2019 - Present"
+         },
+         {
+            icon: <SiNextdotjs />,
+              name: "NextJs",
+              duration: "2019 - Present"
+          },
+        {
+            icon:<FaAndroid />,
+            name: "Android",
+            duration: "2018 - Present"
         },
+        {
+            icon: <FaJava />,
+            name: "Java",
+            duration: "2017 - Present"
+        },
+        {
+            icon:<SiKotlin />,
+            name: "Kotlin",
+            duration: "2018 - Present"
+        },
+        {
+            icon: <FaSwift />,
+            name: "Swift",
+            duration: "2020 - Present"
+        },
+        {
+            icon:<FaGit />,
+            name: "GitHub",
+            duration: "2017 - Present"
+        },
+        {
+            icon:<SiFirebase />,
+            name: "Firebase",
+            duration: "2019 - Present"
+        },
+        {
+            icon: <SiSupabase />,
+            name: "Supabase",
+            duration: "2022 - Present"
+        },
+    
     ]
 }
 
@@ -104,7 +156,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 
-const page = () => {
+const Resume = () => {
     return (
         <motion.div
         initial={{ opacity: 0 }}
@@ -113,7 +165,7 @@ const page = () => {
             transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
         }}
         className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0">
-            <div className="container mx-auto">
+            <div className="container mx-auto pt-[190px]">
                 <Tabs
                 defaultValue="experience"
                 className="flex flex-col xl:flex-row gap-[60px]">
@@ -183,12 +235,12 @@ const page = () => {
                                 {skills.description}
                                 </p>
                                 </div>
-                                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                                <ul className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-4 xl:gap-[20px]">
                                 {skills.skillList.map((skill, index) => { 
                                     return <li key={index}>
                                         <TooltipProvider delayDuration={100}>
                                             <Tooltip>
-                                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                            <TooltipTrigger className="w-full h-[90px] bg-[#232329] rounded-xl flex justify-center items-center group">
                                             <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
                                             </TooltipTrigger>
                                             <TooltipContent>
@@ -229,4 +281,4 @@ const page = () => {
     );
 }
 
-export default page
+export default Resume

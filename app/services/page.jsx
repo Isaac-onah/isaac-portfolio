@@ -8,29 +8,29 @@ import Link from "next/link";
 const services = [
     {
         num: "01",
-        title: "Mobile App Development",
+        title: "Mobile App",
         description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.", 
+        "Building high-performing iOS and Android apps with seamless user experiences.", 
         href: "",
     },
     {
         num: "02",
         title: "UI/UX Design",
         description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.", 
+        "Creating intuitive, user-centric designs that enhance engagement and usability.", 
         href: "",
     },
     {
         num: "03",
-        title: "Web Development",
+        title: "Web Dev",
         description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.", 
+        "Developing responsive and scalable web solutions tailored to modern needs.", 
         href: "",
     },
 
 ];
 
-const page = () => {
+const Services = () => {
     return (
         <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0"> 
             <div className="container mx-auto">
@@ -61,4 +61,4 @@ const page = () => {
     );
 }
 
-export default page
+export default Services
