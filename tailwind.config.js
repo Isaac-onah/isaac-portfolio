@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	mode: 'jit',
     darkMode: ["class"],
     content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -46,7 +47,7 @@ module.exports = {
   				DEFAULT: 'hsl(var(--popover))',
   				foreground: 'hsl(var(--popover-foreground))'
   			},
-  			primary: "#1c1c22",
+  			primary: "#1B1B1B",
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
   				foreground: 'hsl(var(--secondary-foreground))'
@@ -56,8 +57,8 @@ module.exports = {
   				foreground: 'hsl(var(--muted-foreground))'
   			},
   			accent: {
-  				DEFAULT: "00ff99",
-				hover: "#00e187",
+  				DEFAULT: "#387F36",
+				hover: "#387F36",
   			},
   			destructive: {
   				DEFAULT: 'hsl(var(--destructive))',
