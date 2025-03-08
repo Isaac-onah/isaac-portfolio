@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import {Swiper, SwiperSlide } from "swiper/react"; 
 import "swiper/css";
 
-import {BsArrowUpRight, BsGithub } from "react-icons/bs";
+import {BsArrowUpRight, BsGithub, BsGooglePlay } from "react-icons/bs";
 
 import {
 Tooltip,
@@ -19,21 +19,26 @@ import Link from "next/link";
 import Image from "next/image";
 
 import WorkSliderBtns from "@/components/WorkSliderBtns";
+import { FaAppStore, FaAppStoreIos } from "react-icons/fa";
 
 const projects = [
     {
     num: "01",
-    category: "frontend",
+    category: "Mobile",
     title: "project-1",
     description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam- modi.",
+    "A mobile application designed for drivers to efficiently manage their trips by picking up and dropping off passengers based on company-assigned routes. The app provides seamless navigation, trip details, and real-time data integration.",
     stack: [
-        { name: "Html 5" }, 
-        { name: "Css 3" }, 
-        { name: "Javascript" }], 
+        { name: "Flutter" }, 
+        { name: "GetX" }, 
+        { name: "FireBase" }, 
+        { name: "REST APIs" }],
     image: "/assets/work/thumb1.png",
     live:"",
-    github: ""  ,  },
+    github: ""  , 
+    playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
+    applestore:"",
+ },
     {
         num: "02",
         category: "frontend",
@@ -44,9 +49,12 @@ const projects = [
             { name: "Html 5" }, 
             { name: "Css 3" }, 
             { name: "Javascript" }], 
-        image: "/assets/work/thumb1.png",
+        image: "/assets/work/thumb2.png",
         live:"",
-        github: ""  ,  },
+        github: ""  , 
+        playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
+        applestore:"", 
+    },
         {
             num: "03",
             category: "frontend",
@@ -57,9 +65,12 @@ const projects = [
                 { name: "Html 5" }, 
                 { name: "Css 3" }, 
                 { name: "Javascript" }], 
-            image: "/assets/work/thumb1.png",
+            image: "/assets/work/thumb3.png",
             live:"",
-            github: ""  ,  },
+            github: ""  , 
+            playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
+            applestore:"",
+        },
             {
                 num: "04",
                 category: "frontend",
@@ -72,7 +83,10 @@ const projects = [
                     { name: "Javascript" }], 
                 image: "/assets/work/thumb1.png",
                 live:"",
-                github: ""  ,  },
+                github: ""  , 
+                playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
+                applestore:"",  
+            },
                 {
                     num: "05",
                     category: "frontend",
@@ -85,7 +99,10 @@ const projects = [
                         { name: "Javascript" }], 
                     image: "/assets/work/thumb1.png",
                     live:"",
-                    github: ""  ,  }
+                    github: ""  , 
+                    playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
+                    applestore:"", 
+                }
 ];
 
 const Work = () => {
@@ -151,6 +168,30 @@ const Work = () => {
                                                     </TooltipTrigger>
                                                     <TooltipContent>
                                                         <p>Github repository</p>
+                                                    </TooltipContent>
+                                                </Tooltip>
+                                            </TooltipProvider>
+                                        </Link>
+                                        <Link href={project.playstore}>
+                                            <TooltipProvider delayDuration={100}>
+                                                <Tooltip>
+                                                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group"> 
+                                                        <BsGooglePlay className="text-white text-3xl group-hover: text-accent" />
+                                                    </TooltipTrigger>
+                                                    <TooltipContent>
+                                                        <p>Google Play Store</p>
+                                                    </TooltipContent>
+                                                </Tooltip>
+                                            </TooltipProvider>
+                                        </Link>
+                                        <Link href={project.applestore}>
+                                            <TooltipProvider delayDuration={100}>
+                                                <Tooltip>
+                                                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group"> 
+                                                        <FaAppStore className="text-white text-3xl group-hover: text-accent" />
+                                                    </TooltipTrigger>
+                                                    <TooltipContent>
+                                                        <p>Apple App Store</p>
                                                     </TooltipContent>
                                                 </Tooltip>
                                             </TooltipProvider>
