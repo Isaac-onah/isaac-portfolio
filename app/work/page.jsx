@@ -48,10 +48,7 @@ const projects = [
         stack: [
             { name: "Flutter" }, 
             { name: "Provider" }, 
-            { name: "Sqflite" },
-            { name: "Html 5" }, 
-            { name: "Css 3" }, 
-            { name: "Javascript" }
+            { name: "Sqflite" }
         ], 
         image: "/assets/work/thumb2.png",
         live:"",
