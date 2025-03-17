@@ -25,7 +25,7 @@ const projects = [
     {
     num: "01",
     category: "Mobile",
-    title: "project-1",
+    title: "Transport Plus",
     description:
     "A mobile application designed for drivers to efficiently manage their trips by picking up and dropping off passengers based on company-assigned routes. The app provides seamless navigation, trip details, and real-time data integration.",
     stack: [
@@ -41,14 +41,18 @@ const projects = [
  },
     {
         num: "02",
-        category: "frontend",
-        title: "project-1",
+        category: "Mobile",
+        title: "Inventory",
         description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam- modi.",
         stack: [
+            { name: "Flutter" }, 
+            { name: "Provider" }, 
+            { name: "Sqflite" },
             { name: "Html 5" }, 
             { name: "Css 3" }, 
-            { name: "Javascript" }], 
+            { name: "Javascript" }
+        ], 
         image: "/assets/work/thumb2.png",
         live:"",
         github: ""  , 
@@ -57,14 +61,17 @@ const projects = [
     },
         {
             num: "03",
-            category: "frontend",
-            title: "project-1",
+            category: "Mobile",
+            title: "Mobile Blog",
             description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam- modi.",
             stack: [
-                { name: "Html 5" }, 
-                { name: "Css 3" }, 
-                { name: "Javascript" }], 
+                { name: "Flutter" }, 
+                { name: "Bloc" }, 
+                { name: "Hive" },
+                { name: "GetIt" }, 
+                { name: "SupaBase" }
+            ], 
             image: "/assets/work/thumb3.png",
             live:"",
             github: ""  , 
@@ -73,36 +80,20 @@ const projects = [
         },
             {
                 num: "04",
-                category: "frontend",
-                title: "project-1",
+                category: "Mobile",
+                title: "Food App",
                 description:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam- modi.",
                 stack: [
-                    { name: "Html 5" }, 
-                    { name: "Css 3" }, 
-                    { name: "Javascript" }], 
+                    { name: "Kotlin" }, 
+                    { name: "JetPack Compose" }, 
+                    { name: "Firebase" }], 
                 image: "/assets/work/thumb1.png",
                 live:"",
                 github: ""  , 
                 playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
                 applestore:"",  
-            },
-                {
-                    num: "05",
-                    category: "frontend",
-                    title: "project-1",
-                    description:
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam- modi.",
-                    stack: [
-                        { name: "Html 5" }, 
-                        { name: "Css 3" }, 
-                        { name: "Javascript" }], 
-                    image: "/assets/work/thumb1.png",
-                    live:"",
-                    github: ""  , 
-                    playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
-                    applestore:"", 
-                }
+            }
 ];
 
 const Work = () => {
