@@ -44,7 +44,7 @@ const projects = [
         category: "Mobile",
         title: "Mobile Blog",
         description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam- modi.",
+        "A mobile blog app built with Flutter, utilizing BLoC for state management, Hive for local storage, and Supabase as the backend. Users can read, create, and manage blog posts. The app offers smooth offline support with local storage through Hive and real-time synchronization with Supabase. GetX is used for efficient state management across the app",
         stack: [
             { name: "Flutter" }, 
             { name: "Bloc" }, 
@@ -63,7 +63,7 @@ const projects = [
         category: "Mobile",
         title: "Inventory",
         description:
-        "This inventory management app, built with Flutter, Provider for state management, and Sqflite for local storage, provides a seamless experience for managing products and transactions. Users can sign in with Google, add items either manually or by scanning barcodes, and track sales in real-time. The app generates receipts, allows users to view transaction histories, and print them as PDFs. Additionally, it provides an overview of total sales, offering valuable insights for business management.",
+        "A Flutter-based inventory app that allows users to sign in with Google, add items via manual input or barcode scan, track sales, generate receipts, view transaction history, and print PDFs. Built with Provider for state management and Sqflite for local storage.",
         stack: [
             { name: "Flutter" }, 
             { name: "Provider" }, 
@@ -71,16 +71,16 @@ const projects = [
         ], 
         image: "/assets/work/thumb3.png",
         live:"",
-        github: ""  , 
+        github: "https://github.com/Isaac-onah/Inventorymgtsys"  , 
         playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
         applestore:"", 
     },
      {
         num: "04",
         category: "Mobile",
-        title: "Food App",
+        title: "Ticket Booking app",
         description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam- modi.",
+        "This Ticket Booking app, built using Jetpack Compose, Kotlin, Firebase, and MVVM Architecture, offers a seamless user experience for booking flights. Key features include flight listings, search functionality, detailed flight information, a splash screen, and seat selection. This project showcases my skills in Android development, UI design, and integrating Firebase services.",
         stack: [
             { name: "Kotlin" }, 
             { name: "JetPack Compose" }, 
@@ -116,9 +116,14 @@ const Work = () => {
                                     <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                                     {project.num}
                                     </div>
-                                    <h2 className="text-[42px] font-bold leading-none text-white group-hover: text-accent transition-all duration-500 capitalize"> 
-                                        {project.category} project
-                                    </h2>
+                                    <div className="flex flex-col justify-end h-full gap-4">
+                                        <h3 className="text-[35px] font-bold leading-none text-white group-hover: text-accent transition-all duration-500 capitalize"> 
+                                            {project.title}
+                                        </h3>
+                                        <h4 className="text-[18px] font-bold leading-none text-white group-hover: text-accent transition-all duration-500 capitalize"> 
+                                            - {project.category} project
+                                        </h4>
+                                    </div>
                                     {/* project description */}
                                     <p className="text-white/60">{project.description}</p>
                                     {/* stack */}
