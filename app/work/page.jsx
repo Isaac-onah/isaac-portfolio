@@ -34,10 +34,10 @@ const projects = [
             { name: "FireBase" }, 
             { name: "REST APIs" }],
         image: "/assets/work/thumb1.png",
-        live:"",
+        live:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
         github: ""  , 
         playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
-        applestore:"",
+        applestore:"https://apps.apple.com/mt/app/transport-plus-driver/id6742455882",
     },
     {
         num: "02",
@@ -141,55 +141,67 @@ const Work = () => {
                                     <div className="border border-white/20"></div>
                                     {/* buttons */}
                                     <div className="flex items-center gap-4">
+                                    {project.live && (
                                         <Link href={project.live}>
-                                            <TooltipProvider delayDuration={100}>
-                                                <Tooltip>
-                                                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group"> 
-                                                        <BsArrowUpRight className="text-white text-3xl group-hover: text-accent" />
-                                                    </TooltipTrigger>
-                                                    <TooltipContent>
-                                                        <p>Live project</p>
-                                                    </TooltipContent>
-                                                </Tooltip>
-                                            </TooltipProvider>
+                                        <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                            <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                                                <BsArrowUpRight className="text-white text-3xl group-hover: text-accent" />
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>Live project</p>
+                                            </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
                                         </Link>
+                                    )}
+                                    
+                                    {project.github && (
                                         <Link href={project.github}>
-                                            <TooltipProvider delayDuration={100}>
-                                                <Tooltip>
-                                                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group"> 
-                                                        <BsGithub className="text-white text-3xl group-hover: text-accent" />
-                                                    </TooltipTrigger>
-                                                    <TooltipContent>
-                                                        <p>Github repository</p>
-                                                    </TooltipContent>
-                                                </Tooltip>
-                                            </TooltipProvider>
+                                        <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                            <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                                                <BsGithub className="text-white text-3xl group-hover: text-accent" />
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>Github repository</p>
+                                            </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
                                         </Link>
+                                    )}
+
+                                    {project.playstore && (
                                         <Link href={project.playstore}>
-                                            <TooltipProvider delayDuration={100}>
-                                                <Tooltip>
-                                                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group"> 
-                                                        <BsGooglePlay className="text-white text-3xl group-hover: text-accent" />
-                                                    </TooltipTrigger>
-                                                    <TooltipContent>
-                                                        <p>Google Play Store</p>
-                                                    </TooltipContent>
-                                                </Tooltip>
-                                            </TooltipProvider>
+                                        <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                            <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                                                <BsGooglePlay className="text-white text-3xl group-hover: text-accent" />
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>Google Play Store</p>
+                                            </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
                                         </Link>
+                                    )}
+
+                                    {project.applestore && (
                                         <Link href={project.applestore}>
-                                            <TooltipProvider delayDuration={100}>
-                                                <Tooltip>
-                                                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group"> 
-                                                        <FaAppStore className="text-white text-3xl group-hover: text-accent" />
-                                                    </TooltipTrigger>
-                                                    <TooltipContent>
-                                                        <p>Apple App Store</p>
-                                                    </TooltipContent>
-                                                </Tooltip>
-                                            </TooltipProvider>
+                                        <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                            <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                                                <FaAppStore className="text-white text-3xl group-hover: text-accent" />
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>Apple App Store</p>
+                                            </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
                                         </Link>
+                                    )}
                                     </div>
+
                                 </div>
                             </div>
                             <div className="w-full xl:w-[50%]">
