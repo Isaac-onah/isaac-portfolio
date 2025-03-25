@@ -23,74 +23,74 @@ import { FaAppStore, FaAppStoreIos } from "react-icons/fa";
 
 const projects = [
     {
-    num: "01",
-    category: "Mobile",
-    title: "Transport Plus",
-    description:
-    "A mobile application designed for drivers to efficiently manage their trips by picking up and dropping off passengers based on company-assigned routes. The app provides seamless navigation, trip details, and real-time data integration.",
-    stack: [
-        { name: "Flutter" }, 
-        { name: "GetX" }, 
-        { name: "FireBase" }, 
-        { name: "REST APIs" }],
-    image: "/assets/work/thumb1.png",
-    live:"",
-    github: ""  , 
-    playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
-    applestore:"",
- },
+        num: "01",
+        category: "Mobile",
+        title: "Transport Plus",
+        description:
+        "A mobile application designed for drivers to efficiently manage their trips by picking up and dropping off passengers based on company-assigned routes. The app provides seamless navigation, trip details, and real-time data integration.",
+        stack: [
+            { name: "Flutter" }, 
+            { name: "GetX" }, 
+            { name: "FireBase" }, 
+            { name: "REST APIs" }],
+        image: "/assets/work/thumb1.png",
+        live:"",
+        github: ""  , 
+        playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
+        applestore:"",
+    },
     {
         num: "02",
         category: "Mobile",
-        title: "Inventory",
+        title: "Mobile Blog",
         description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam- modi.",
         stack: [
             { name: "Flutter" }, 
-            { name: "Provider" }, 
-            { name: "Sqflite" }
+            { name: "Bloc" }, 
+            { name: "Hive" },
+            { name: "GetIt" }, 
+            { name: "SupaBase" }
         ], 
         image: "/assets/work/thumb2.png",
         live:"",
         github: ""  , 
         playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
+        applestore:"",
+    },
+    {
+        num: "03",
+        category: "Mobile",
+        title: "Inventory",
+        description:
+        "This inventory management app, built with Flutter, Provider for state management, and Sqflite for local storage, provides a seamless experience for managing products and transactions. Users can sign in with Google, add items either manually or by scanning barcodes, and track sales in real-time. The app generates receipts, allows users to view transaction histories, and print them as PDFs. Additionally, it provides an overview of total sales, offering valuable insights for business management.",
+        stack: [
+            { name: "Flutter" }, 
+            { name: "Provider" }, 
+            { name: "Sqflite" }
+        ], 
+        image: "/assets/work/thumb3.png",
+        live:"",
+        github: ""  , 
+        playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
         applestore:"", 
     },
-        {
-            num: "03",
-            category: "Mobile",
-            title: "Mobile Blog",
-            description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam- modi.",
-            stack: [
-                { name: "Flutter" }, 
-                { name: "Bloc" }, 
-                { name: "Hive" },
-                { name: "GetIt" }, 
-                { name: "SupaBase" }
-            ], 
-            image: "/assets/work/thumb3.png",
-            live:"",
-            github: ""  , 
-            playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
-            applestore:"",
-        },
-            {
-                num: "04",
-                category: "Mobile",
-                title: "Food App",
-                description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam- modi.",
-                stack: [
-                    { name: "Kotlin" }, 
-                    { name: "JetPack Compose" }, 
-                    { name: "Firebase" }], 
-                image: "/assets/work/thumb1.png",
-                live:"",
-                github: ""  , 
-                playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
-                applestore:"",  
-            }
+     {
+        num: "04",
+        category: "Mobile",
+        title: "Food App",
+        description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam- modi.",
+        stack: [
+            { name: "Kotlin" }, 
+            { name: "JetPack Compose" }, 
+            { name: "Firebase" }], 
+        image: "/assets/work/thumb1.png",
+        live:"",
+        github: ""  , 
+        playstore:"https://play.google.com/store/apps/details?id=io.transportplus.driver&hl=en",
+        applestore:"",  
+    }
 ];
 
 const Work = () => {
