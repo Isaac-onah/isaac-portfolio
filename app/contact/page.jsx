@@ -54,8 +54,7 @@ const Contact = () => {
                             <div className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"> 
                                 <h3 className="text-4xl text-accent">Let's work together</h3>
                                 <p className="text-white/60">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-                                    nihil sapiente pariatur id totam.
+                                   I’m passionate about building high-quality mobile applications that deliver seamless user experiences. With a strong foundation in mobile development technologies (Flutter, java and swift) and focus on clean architecture, I bring both technical skill and creative problem-solving to every project. Let’s collaborate to turn bold ideas into polished, performant apps.
                                 </p>
                             </div>
                         </div>

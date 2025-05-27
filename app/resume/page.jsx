@@ -22,7 +22,7 @@ const about = {
         },
         {
             fieldName:"Experience",
-            fieldValue:"5+ Years"
+            fieldValue:"3+ Years"
         },
         {
             fieldName:"Languages",
@@ -39,17 +39,7 @@ const experience = {
         {
             company:"EEDC | Enugu Electricity Distribution Company",
             position:"Senior Mobile Engineer",
-            duration:"2020 - 2024"
-        },
-        {
-            company:"Cred Assess",
-            position:"Mobile App Developer",
-            duration:"2019 - 2020"
-        },
-        {
-            company:"Vtech Academy",
-            position:"Freelance/Mentorship",
-            duration:"2019"
+            duration:"2022 - 2024"
         },
     ]
 }
@@ -63,11 +53,6 @@ const education = {
             institution :"WolverHampton University",
             degree:"Computer Science",
             duration:"2022 - 2025"
-        },
-        {
-            institution :"Aptech Computer Education",
-            degree:"Full Stack Developer",
-            duration:"2022 - 2024"
         },
         {
             institution :"Federal University Of Technology Owerri",
@@ -84,12 +69,12 @@ const skills = {
         {
             icon :<FaHtml5 />,
             name:"Html",
-            duration:"2022 - 2025"
+            duration:"2018 - 2025"
         }, 
         {
             icon :<FaCss3 />,
             name:"Css",
-            duration:"2022 - 2025"
+            duration:"2018 - 2025"
         },
         {
             icon: <FaJs />,
@@ -99,7 +84,7 @@ const skills = {
        {
         icon:<SiFlutter />,
             name: "Flutter",
-            duration: "2019 - Present"
+            duration: "2020 - Present"
         },
         {
             icon: <SiTailwindcss />,
@@ -119,12 +104,12 @@ const skills = {
         {
             icon: <FaJava />,
             name: "Java",
-            duration: "2017 - Present"
+            duration: "2020 - Present"
         },
         {
             icon:<SiKotlin />,
             name: "Kotlin",
-            duration: "2018 - Present"
+            duration: "2020 - Present"
         },
         {
             icon: <FaSwift />,
