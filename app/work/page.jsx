@@ -61,7 +61,7 @@ const projects = [
     {
         num: "03",
         category: "Mobile",
-        title: "Inventory",
+        title: "Azora App",
         description:
         "A Flutter-based inventory app that allows users to sign in with Google, add items via manual input or barcode scan, track sales, generate receipts, view transaction history, and print PDFs. Built with Provider for state management and Sqflite for local storage.",
         stack: [
